@@ -1,0 +1,9 @@
+LoadModule passenger_module \
+  /usr/local/lib/ruby/gems/2.1.0/gems/passenger-4.0.44/ext/apache2/mod_passenger.c
+PassengerRoot /usr/local/lib/ruby/gems/2.1.0/gems/passenger-4.0.44
+PassengerRuby /usr/local/bin/ruby
+PassengerUseGlobalQueue on
+PassengerMaxPoolSize 5
+PassengerPoolIdleTime 900
+PassengerMaxRequests 10000
+
